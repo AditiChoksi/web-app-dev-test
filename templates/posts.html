@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container" style="width: 75%;">
+
+    {% for r in result%}
+    <p>
+        <p>{{r[1]}}</p>
+        <p>{{r[2]}}</p>
+        <p>{{r[3]}}</p>
+        <p>Posted on: {{r[4]}}</p>
+        <p>{{r[5]}}</p>
+    </p>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
